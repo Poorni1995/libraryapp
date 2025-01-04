@@ -10,7 +10,6 @@ COPY target/libraryapp-0.0.1-SNAPSHOT.jar app.jar
 # Expose port 8080 to the outside world
 EXPOSE 8080
 
-
 ENTRYPOINT ["java", "-jar", "app.jar"]
 
 #buid the docker image (-t libraryapp)
@@ -22,4 +21,5 @@ ENTRYPOINT ["java", "-jar", "app.jar"]
 #connect the local repo to github( git remote add origin https://github.com/Poorni/libraryapp.git)
 #add all files(git add)
 #make the first commit( git commit -m"Initial commit - Spring Boot Library App setup")
+#git push
 #push the code (git branch -M main )(git push -u origin main)
